@@ -1,4 +1,4 @@
-package com.qaacademy.module1.programming.comparisonoperators;
+package com.qaacademy.module1.programming.class1.comparisonoperators;
 
 public class ComparisonOperator {
     public static void main(String[] args) {

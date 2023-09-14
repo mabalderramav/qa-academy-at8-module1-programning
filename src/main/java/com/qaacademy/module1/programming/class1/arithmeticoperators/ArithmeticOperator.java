@@ -1,4 +1,4 @@
-package com.qaacademy.module1.programming.arithmeticoperators;
+package com.qaacademy.module1.programming.class1.arithmeticoperators;
 
 public class ArithmeticOperator {
     public static void main(String[] args) {

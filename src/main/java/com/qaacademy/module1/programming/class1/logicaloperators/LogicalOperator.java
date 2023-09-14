@@ -1,4 +1,4 @@
-package com.qaacademy.module1.programming.logicaloperators;
+package com.qaacademy.module1.programming.class1.logicaloperators;
 
 public class LogicalOperator {
     public static void main(String[] args) {

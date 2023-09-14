@@ -1,4 +1,4 @@
-package com.qaacademy.module1.programming.datatype;
+package com.qaacademy.module1.programming.class1.datatype;
 
 public class DataType {
 

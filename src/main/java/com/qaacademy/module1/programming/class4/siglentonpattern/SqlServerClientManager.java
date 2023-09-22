@@ -2,30 +2,30 @@ package com.qaacademy.module1.programming.class4.siglentonpattern;
 
 import com.qaacademy.module1.programming.class4.builderparttern.DataBaseConnection;
 
-public class MongoClientManger {
-    private static MongoClientManger instance = null;
+public class SqlServerClientManager {
+    private static SqlServerClientManager instance = null;
 
     private final DataBaseConnection dataBaseConnection;
 
-    private MongoClientManger(DataBaseConnection dataBaseConnection) {
+    private SqlServerClientManager(DataBaseConnection dataBaseConnection) {
         this.dataBaseConnection = dataBaseConnection;
     }
 
-    public static MongoClientManger getInstance(DataBaseConnection dataBaseConnection) {
+    public static SqlServerClientManager getInstance(DataBaseConnection dataBaseConnection) {
         if (instance == null) {
-            instance = new MongoClientManger(dataBaseConnection);
+            instance = new SqlServerClientManager(dataBaseConnection);
         }
 
         return instance;
     }
 
     public void connect() {
-        System.out.println("Connecting to MongoDb");
+        System.out.println("Connecting to SqlServer");
         System.out.println(getConnectionString());
     }
 
     private String getConnectionString() {
-        return  String.format("mongodb://%s:%s@%s:%s/%s?readPreference=primary&tls=true&authSource=%s",
+        return  String.format("sqlServer: data source//%s:%s@%s:%s/%s?readPreference=primary&tls=true&authSource=%s",
                 dataBaseConnection.getUsername(),
                 dataBaseConnection.getPassword(),
                 dataBaseConnection.getHostname(),

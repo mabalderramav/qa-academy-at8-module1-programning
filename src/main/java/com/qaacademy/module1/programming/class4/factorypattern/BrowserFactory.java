@@ -9,6 +9,7 @@ public final class BrowserFactory {
             case CHROME -> new Chrome();
             case FIREFOX -> new Firefox();
             case SAFARI -> new Safari();
+            case EDGE -> new Edge();
         };
     }
 }
